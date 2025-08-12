@@ -1,4 +1,4 @@
-from my_class import Person
+from python.my_class_two import Person
 
 
 class Employee(Person):

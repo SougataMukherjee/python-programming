@@ -1,26 +1,22 @@
-class Person:
-    compile = "dev"
+class Account:
+    def __init__(self, bal, acc):
+        self.bal = bal
+        self.acc = acc
 
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
-        self._email = None
+    def debit(self, amount):
+        self.bal -= amount
+        print("Rs", amount, "was debit")
+        print("total balance", self.get_balance())
 
-    def introduce(self):
-        return f"Hi, I am {self.name} ,and {self.age} years old"
+    def credit(self, amount):
+        self.bal += amount
+        print("Rs", amount, "was credited")
+        print("total balance", self.get_balance())
 
-    @property
-    def email(self):
-        return self._email
-
-    @email.setter
-    def email(self, value):
-        if "@" in value:
-            self._email = value
-        else:
-            raise ValueError('invalid email')
+    def get_balance(self):
+        return self.bal
 
 
-person1 = Person('Sam', 29)
-person1.email = "sam@gmail.com"
-print(person1.introduce(), person1.email)
+acc1 = Account(10000, 12000)
+acc1.debit(5000)
+acc1.credit(20000)
