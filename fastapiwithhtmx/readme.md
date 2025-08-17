@@ -1,5 +1,8 @@
-check python --version
-check pip --version
+
+
+
+
+
 
 # 1️⃣ Create the virtual env
 python -m venv venv
@@ -8,9 +11,9 @@ python -m venv venv
 .\venv\Scripts\Activate.ps1
 
 # 3️⃣ install fastapi
-pip install fastapi uvicorn
+pip install fastapi uvicorn Jinja2
+check install or not      pip show fastapi
 
-pip freeze > requirements.txt
 
 # 4️⃣ run app
 uvicorn main:app --reload

@@ -1,6 +1,3 @@
-check python --version
-check pip --version
-
 # 1️⃣ Create the virtual env
 python -m venv venv
 
@@ -19,5 +16,3 @@ go to the url like http://127.0.0.1:8000
 
 # 5️⃣ Deactivate
 deactivate
-
-
