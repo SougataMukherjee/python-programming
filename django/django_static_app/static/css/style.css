@@ -1,0 +1,4 @@
+body { font-family: system-ui, Arial, sans-serif; margin: 2rem; }
+.site-header { display: flex; align-items: center; gap: 1rem; margin-bottom: 2rem; }
+.logo { height: 40px; }
+h1 { color: red; }
