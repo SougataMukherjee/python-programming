@@ -20,10 +20,14 @@ print("Multiply by scalar:", arr1 * 10)
 
 # 2d array
 arr2D = np.array([[1, 2], [3, 4]])
+for i in arr2D:
+    print(i)
 print("shape and size",arr2D.shape,arr2D.size)
 print("specific element",arr2D[0,1])
 print("entire 1st col",arr2D[0:])
 print("entire2nd row",arr2D[:1])
+print("entire last row",arr2D[-1])
+print("entire last row and last col",arr2D[-1,0:1])
 
 zeros = np.zeros((3, 3))             # 3x3 zeros
 ones = np.ones((2, 2))               # 2x2 ones
