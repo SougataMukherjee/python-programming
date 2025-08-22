@@ -64,5 +64,5 @@ def langchain_agent():
 
 
 if __name__ == "__main__":
-    # print(generate_name('cat', 'milk'))
-    langchain_agent()
+    print(generate_name('cat', 'milk'))
+    # langchain_agent()

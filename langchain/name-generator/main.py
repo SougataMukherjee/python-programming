@@ -2,6 +2,8 @@ import langchain_helper as lch
 import streamlit as st
 
 st.title("Name Generator")
+st.subheader("below generating text...")
+st.write("generated..")
 
 sp_type = st.sidebar.selectbox("What is your name?", ("man", "cat", "dog"))
 
